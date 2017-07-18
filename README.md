@@ -15,4 +15,4 @@ cp -r .vim ~/.vim
 ```
 yum install ctags
 ```
-then ``ctags -R `` in the code path
+then run ``ctags -R `` in the code path
