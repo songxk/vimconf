@@ -1,5 +1,4 @@
 # vimconf
-vim config 
 
 ## install
 ```
@@ -11,3 +10,9 @@ git clone https://github.com/songxk/vimconf.git
 cp .vimrc ~/.vimrc
 cp -r .vim ~/.vim
 ```
+
+## if you need ctags, install it 
+```
+yum install ctags
+```
+then ``ctags -R `` in the code path
