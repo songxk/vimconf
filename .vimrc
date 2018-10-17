@@ -248,7 +248,7 @@ set noswapfile               " 不生成交换文件
 set list                     " 显示特殊字符，其中Tab使用高亮~代替，尾部空白使用高亮点号代替
 set listchars=tab:\~\ ,trail:.
 set expandtab                " 将Tab自动转化成空格 [需要输入真正的Tab键时，使用 Ctrl+V + Tab]
-"set showmatch               " 显示括号配对情况
+set showmatch               " 显示括号配对情况
 
 syntax enable                " 打开语法高亮
 syntax on                    " 开启文件类型侦测
@@ -290,9 +290,9 @@ endif
 :inoremap } <c-r>=ClosePair('}')<cr>
 :inoremap [ []<esc>i
 :inoremap ] <c-r>=ClosePair(']')<cr>
-:inoremap " ""<esc>i
-:inoremap ' ''<esc>i
-:inoremap ` ``<esc>i
+" :inoremap " ""<esc>i
+" :inoremap ' ''<esc>i
+" :inoremap ` ``<esc>i
 au FileType scheme,racket,newlisp,lisp,clojure :inoremap ' '
 au FileType scheme,racket,newlisp,lisp,clojure :inoremap ` `
 au FileType scheme,racket,newlisp,lisp,clojure :inoremap * **<esc>i
